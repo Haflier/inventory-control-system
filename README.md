@@ -103,17 +103,13 @@ No order is placed.
 Customer arrivals follow a **Poisson process**
 
 [
-$$
-N(t) \sim \text{Poisson}(\lambda)
-$$
+**Arrival Process:** `N(t) ~ Poisson(λ)`
 ]
 
 where
 
 [
-$$
-\lambda = 2
-$$
+**Arrival Rate:** `λ = 2`
 ]
 
 ---
@@ -123,9 +119,7 @@ $$
 Each customer's demand is randomly generated using
 
 [
-$$
-Demand \sim \text{Uniform}(8,23)
-$$
+**Demand Distribution:** `Uniform(8, 23)`
 ]
 
 ---
@@ -135,9 +129,7 @@ $$
 The replenishment lead time is assumed to be deterministic
 
 [
-$$
-L = 1\ \text{day}
-$$
+**Lead Time:** `L = 1 day`
 ]
 
 ---
@@ -240,17 +232,13 @@ However, excessively large inventory levels significantly increased holding cost
 Simulation results indicated that the best overall performance occurred approximately within
 
 [
-$$
-S \approx 51
-$$
+`S ≈ 51`
 ]
 
 with
 
 [
-$$
-S \approx 22
-$$
+`S ≈ 22`
 ]
 
 providing the highest net profit under the modeled assumptions.
@@ -338,12 +326,6 @@ inventory-control-arena/
 | ![](screenshots/process_analyzer_S.jpg) | ![](screenshots/process_analyzer_L.jpg) |
 
 ---
-
-# Author
-
-**Haflier**
-
-Bachelor's Student in Computer Science
 
 # Project Highlights
 
