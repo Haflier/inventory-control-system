@@ -42,7 +42,7 @@ Whenever the inventory level falls below a predefined reorder point **s**, a rep
 The ordered quantity is
 
 [
-OrderSize=S-Inventory
+OrderSize = S - Inventory
 ]
 
 where
@@ -65,7 +65,7 @@ The simulation implements the classical continuous review inventory policy.
 If
 
 [
-Inventory \le s
+Inventory < s
 ]
 
 then
@@ -103,13 +103,17 @@ No order is placed.
 Customer arrivals follow a **Poisson process**
 
 [
-N(t)\sim Poisson(\lambda)
+$$
+N(t) \sim \text{Poisson}(\lambda)
+$$
 ]
 
 where
 
 [
-\lambda=2
+$$
+\lambda = 2
+$$
 ]
 
 ---
@@ -119,7 +123,9 @@ where
 Each customer's demand is randomly generated using
 
 [
-Demand\sim Uniform(8,23)
+$$
+Demand \sim \text{Uniform}(8,23)
+$$
 ]
 
 ---
@@ -129,7 +135,9 @@ Demand\sim Uniform(8,23)
 The replenishment lead time is assumed to be deterministic
 
 [
-L=1\ day
+$$
+L = 1\ \text{day}
+$$
 ]
 
 ---
@@ -232,13 +240,17 @@ However, excessively large inventory levels significantly increased holding cost
 Simulation results indicated that the best overall performance occurred approximately within
 
 [
-S\approx51
+$$
+S \approx 51
+$$
 ]
 
 with
 
 [
-s\approx22
+$$
+S \approx 22
+$$
 ]
 
 providing the highest net profit under the modeled assumptions.
@@ -289,9 +301,9 @@ inventory-control-arena/
 │
 ├── screenshots/
 │   ├── arena_model.png
-│   ├── dashboard.png
-│   ├── process_analyzer_S.png
-│   └── process_analyzer_L.png
+│   ├── dashboard.jpg
+│   ├── process_analyzer_S.jpg
+│   └── process_analyzer_L.jpg
 │
 ├── docs/
 │   ├── Project_Report.pdf
@@ -319,11 +331,11 @@ inventory-control-arena/
 
 | Arena Model                      | Dashboard                      |
 | -------------------------------- | ------------------------------ |
-| ![](screenshots/arena_model.png) | ![](screenshots/dashboard.png) |
+| ![](screenshots/arena_model.png) | ![](screenshots/dashboard.jpg) |
 
 | Parameter Optimization                  | Lead Time Analysis                      |
 | --------------------------------------- | --------------------------------------- |
-| ![](screenshots/process_analyzer_S.png) | ![](screenshots/process_analyzer_L.png) |
+| ![](screenshots/process_analyzer_S.jpg) | ![](screenshots/process_analyzer_L.jpg) |
 
 ---
 
@@ -333,11 +345,11 @@ inventory-control-arena/
 
 Bachelor's Student in Computer Science
 
-## ⭐ Project Highlights
+# Project Highlights
 
-* ✔ Developed a complete **Discrete Event Simulation** using Rockwell Arena.
-* ✔ Implemented an **(s, S)** inventory control policy.
-* ✔ Modeled stochastic customer arrivals and demand.
-* ✔ Evaluated financial and operational KPIs.
-* ✔ Performed simulation-based optimization using Arena Process Analyzer.
-* ✔ Identified near-optimal inventory policy parameters through sensitivity analysis.
+* Developed a complete **Discrete Event Simulation** using Rockwell Arena.
+* Implemented an **(s, S)** inventory control policy.
+* Modeled stochastic customer arrivals and demand.
+* Evaluated financial and operational KPIs.
+* Performed simulation-based optimization using Arena Process Analyzer.
+* Identified near-optimal inventory policy parameters through sensitivity analysis.
