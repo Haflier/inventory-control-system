@@ -1,0 +1,36 @@
+[RESOURCES]
+[VARIABLES]
+End Day.NumberOut
+Customer Arrival.NumberOut
+Reorder?.NumberOut False
+OnOrder
+c
+h
+TotalSales
+L
+r
+T
+Inventory
+Day Increament.NumberOut
+TotalEarn
+Upper_S
+TotalOrderCost
+HoldingCost
+Enough Inventory?.NumberOut True
+OrderSize
+Reorder?.NumberOut True
+Lambda
+Separate.NumberOut Orig
+Separate.NumberOut Dup
+TotalHoldingCost
+LostSales
+PartialSales
+OrderCost
+TotalCost
+Budget
+End Order.NumberOut
+TotalDemandSize
+TotalOrderSize
+Customer Leaves.NumberOut
+Lower_s
+Enough Inventory?.NumberOut False

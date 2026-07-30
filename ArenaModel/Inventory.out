@@ -1,0 +1,75 @@
+SIMAN Run Controller.
+
+92.0 Days>
+                                      ARENA Simulation Results
+                                      Huj - License: 7328734345
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 2/ 2/2026
+Analyst: Rockwell Automation                                         Model revision date: 2/ 2/2026
+
+Replication ended at time      : 92.0 Days 
+Base Time Units: Days
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             .00000     (Insuf)    .00000     .00000         44    
+Customer.NVATime                            .00000     (Insuf)    .00000     .00000         44    
+Customer.WaitTime                           .00000     (Insuf)    .00000     .00000         44    
+Customer.TranTime                           .00000     (Insuf)    .00000     .00000         44    
+Customer.OtherTime                          .00000     (Insuf)    .00000     .00000         44    
+Customer.TotalTime                          .00000     (Insuf)    .00000     .00000         44    
+Order.VATime                                .00000     (Insuf)    .00000     .00000         16    
+Order.NVATime                               .00000     (Insuf)    .00000     .00000         16    
+Order.WaitTime                              1.0000     (Insuf)    1.0000     1.0000         16    
+Order.TranTime                              .00000     (Insuf)    .00000     .00000         16    
+Order.OtherTime                             .00000     (Insuf)    .00000     .00000         16    
+Order.TotalTime                             1.0000     (Insuf)    1.0000     1.0000         16    
+Day.VATime                                  .00000     (Insuf)    .00000     .00000         92    
+Day.NVATime                                 .00000     (Insuf)    .00000     .00000         92    
+Day.WaitTime                                .00000     (Insuf)    .00000     .00000         92    
+Day.TranTime                                .00000     (Insuf)    .00000     .00000         92    
+Day.OtherTime                               .00000     (Insuf)    .00000     .00000         92    
+Day.TotalTime                               .00000     (Insuf)    .00000     .00000         92    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+TotalSales Value                            337.76     (Insuf)    .00000     705.00     705.00    
+Inventory Value                             39.108     (Insuf)    2.0000     60.000     46.000    
+TotalEarn Value                             1688.8     (Insuf)    .00000     3525.0     3525.0    
+TotalOrderCost Value                        1003.4     (Insuf)    .00000     2103.0     2103.0    
+HoldingCost Value                           4.4445     (Insuf)    .00000     6.0000     4.6000    
+TotalHoldingCost Value                      202.42     (Insuf)    .00000     408.90     408.90    
+LostSales Value                             .11957     (Insuf)    .00000     1.0000     1.0000    
+PartialSales Value                          .11957     (Insuf)    .00000     1.0000     1.0000    
+TotalCost Value                             1205.8     (Insuf)    .00000     2511.9     2511.9    
+Budget Value                                482.91     (Insuf)    .00000     1022.3     1013.1    
+TotalDemandSize Value                       337.88     (Insuf)    .00000     706.00     706.00    
+TotalOrderSize Value                        326.86     (Insuf)    .00000     701.00     701.00    
+Customer.WIP                                .00000     (Insuf)    .00000     2.0000     .00000    
+Order.WIP                                   .17391     (Insuf)    .00000     1.0000     .00000    
+Day.WIP                                     .00000     (Insuf)    .00000     1.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           60.000    
+Customer.NumberOut                          60.000    
+Order.NumberIn                              16.000    
+Order.NumberOut                             16.000    
+Day.NumberIn                                92.000    
+Day.NumberOut                               92.000    
+System.NumberOut                            152.00    
+
+
+Simulation run time: 1.20 minutes.
+Simulation run complete.

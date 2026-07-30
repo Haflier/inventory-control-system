@@ -1,0 +1,12 @@
+*.tmp
+*.log
+*.bak
+
+Thumbs.db
+Desktop.ini
+
+.vs/
+
+*.user
+
+*.cache
