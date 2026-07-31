@@ -2,7 +2,7 @@
 
 > **A Discrete-Event Simulation of an (s, S) Inventory Policy with Parameter Optimization using Rockwell Arena**
 
-![Arena](screenshots/arena_model.png)
+![Arena](screenshots/flowchart.png)
 
 ---
 
@@ -108,7 +108,9 @@ where
 
 Each customer's demand is randomly generated using
 
-**Demand Distribution:** `Uniform(8, 23)`
+**Demand Distribution:** `[Uniform[8, 23]]`
+
+note that it's a <<discrete>> uniform distribution on integers from 8 to 23.
 
 ---
 
@@ -289,17 +291,13 @@ inventory-control-arena/
 
 * Rockwell Arena Simulation
 * Arena Process Analyzer (PAN)
-* Discrete Event Simulation (DES)
-* Event Scheduling Method
-* Inventory Theory
-* Operations Research
-* Draw.io (Flowchart)
+* Draw.io
 
 ---
 
 # Screenshots
 
-| Arena Model                      | Dashboard                      |
+| Flowchart                      | Arena Model                      |
 | -------------------------------- | ------------------------------ |
 | ![](screenshots/flowchart.png) | ![](screenshots/arena_model.jpg) |
 
