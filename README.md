@@ -2,7 +2,7 @@
 
 > **A Discrete-Event Simulation of an (s, S) Inventory Policy with Parameter Optimization using Rockwell Arena**
 
-![Arena](screenshots/flowchart.png)
+![Arena](screenshots/arena_model.jpg)
 
 ---
 
@@ -74,7 +74,11 @@ No order is placed.
 
 ---
 
-# Initial Parameters
+# Flowchart
+
+![Flowchart](screenshots/flowchart.png)
+
+# Initial parameters
 
 | Parameter                 | Value            |
 | ------------------------- | ---------------- |
@@ -88,8 +92,6 @@ No order is placed.
 | Customer Arrival Rate (λ) | 2                |
 | Simulation Length         | 365 days         |
 
----
-
 # Stochastic Assumptions
 
 ### Customer Arrivals
@@ -102,8 +104,6 @@ where
 
 **Arrival Rate:** `λ = 2`
 
----
-
 ### Demand Size
 
 Each customer's demand is randomly generated using
@@ -111,8 +111,6 @@ Each customer's demand is randomly generated using
 **Demand Distribution:** `[Uniform[8, 23]]`
 
 note that it's a <<discrete>> uniform distribution on integers from 8 to 23.
-
----
 
 ### Supplier Lead Time
 
