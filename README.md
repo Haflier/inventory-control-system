@@ -39,11 +39,9 @@ Customers arrive according to a stochastic process and request a random number o
 
 Whenever the inventory level falls below a predefined reorder point **s**, a replenishment order is automatically placed.
 
-The ordered quantity is
+The ordered quantity is:
 
-[
-OrderSize = S - Inventory
-]
+`OrderSize = S - Inventory`
 
 where
 
@@ -64,15 +62,11 @@ The simulation implements the classical continuous review inventory policy.
 
 If
 
-[
-Inventory < s
-]
+`Inventory < s`
 
 then
 
-[
-OrderSize = S-Inventory
-]
+`OrderSize = S-Inventory`
 
 Otherwise,
 
@@ -102,15 +96,11 @@ No order is placed.
 
 Customer arrivals follow a **Poisson process**
 
-[
 **Arrival Process:** `N(t) ~ Poisson(λ)`
-]
 
 where
 
-[
 **Arrival Rate:** `λ = 2`
-]
 
 ---
 
@@ -118,9 +108,7 @@ where
 
 Each customer's demand is randomly generated using
 
-[
 **Demand Distribution:** `Uniform(8, 23)`
-]
 
 ---
 
@@ -128,9 +116,7 @@ Each customer's demand is randomly generated using
 
 The replenishment lead time is assumed to be deterministic
 
-[
 **Lead Time:** `L = 1 day`
-]
 
 ---
 
@@ -173,7 +159,7 @@ The model manages customer arrivals, inventory transactions, replenishment order
 The following Key Performance Indicators (KPIs) are collected throughout the simulation.
 
 * Inventory Level
-* Total Revenue
+* Total Earn
 * Budget
 * Holding Cost
 * Ordering Cost
@@ -231,15 +217,11 @@ However, excessively large inventory levels significantly increased holding cost
 
 Simulation results indicated that the best overall performance occurred approximately within
 
-[
 `S ≈ 51`
-]
 
 with
 
-[
-`S ≈ 22`
-]
+`s ≈ 22`
 
 providing the highest net profit under the modeled assumptions.
 
@@ -319,7 +301,7 @@ inventory-control-arena/
 
 | Arena Model                      | Dashboard                      |
 | -------------------------------- | ------------------------------ |
-| ![](screenshots/arena_model.png) | ![](screenshots/dashboard.jpg) |
+| ![](screenshots/flowchart.png) | ![](screenshots/arena_model.jpg) |
 
 | Parameter Optimization                  | Lead Time Analysis                      |
 | --------------------------------------- | --------------------------------------- |
