@@ -14,23 +14,6 @@ The simulation models customer arrivals, random demand sizes, inventory replenis
 
 ---
 
-## Features
-
-* Discrete Event Simulation using Arena
-* (s, S) Inventory Control Policy
-* Random customer arrivals
-* Random customer demand
-* Supplier lead time
-* Lost sales tracking
-* Partial order fulfillment
-* Automatic inventory replenishment
-* Daily holding cost calculation
-* Financial performance monitoring
-* Process Analyzer optimization
-* Interactive simulation dashboard
-
----
-
 ## Problem Description
 
 A retail store sells a single product with uncertain customer demand.
@@ -56,28 +39,6 @@ The simulation evaluates the operational and financial performance of this inven
 
 ---
 
-# Inventory Policy
-
-The simulation implements the classical continuous review inventory policy.
-
-If
-
-`Inventory < s`
-
-then
-
-`OrderSize = S-Inventory`
-
-Otherwise,
-
-No order is placed.
-
----
-
-# Flowchart
-
-![Flowchart](screenshots/flowchart.png)
-
 # Initial parameters
 
 | Parameter                 | Value            |
@@ -94,7 +55,7 @@ No order is placed.
 
 # Stochastic Assumptions
 
-### Customer Arrivals
+### Customer Arrivals (tbl(1))
 
 Customer arrivals follow a **Poisson process**
 
@@ -104,7 +65,7 @@ where
 
 **Arrival Rate:** `λ = 2`
 
-### Demand Size
+### Demand Size (tbl(2))
 
 Each customer's demand is randomly generated using
 
@@ -112,11 +73,9 @@ Each customer's demand is randomly generated using
 
 note that it's a <<discrete>> uniform distribution on integers from 8 to 23.
 
-### Supplier Lead Time
+# Flowchart
 
-The replenishment lead time is assumed to be deterministic
-
-**Lead Time:** `L = 1 day`
+![Flowchart](screenshots/flowchart.png)
 
 ---
 
@@ -139,21 +98,6 @@ The primary events are:
 
 ---
 
-# Arena Model
-
-The Arena model contains the following major modules:
-
-* Create
-* Assign
-* Decide
-* Separate
-* Delay
-* Dispose
-
-The model manages customer arrivals, inventory transactions, replenishment orders, and financial updates while continuously recording system performance.
-
----
-
 # Performance Metrics
 
 The following Key Performance Indicators (KPIs) are collected throughout the simulation.
@@ -172,7 +116,7 @@ The following Key Performance Indicators (KPIs) are collected throughout the sim
 
 ---
 
-# Simulation Dashboard
+# Simulation Dashboard (system monitoring)
 
 The simulation includes an interactive dashboard displaying:
 
@@ -243,20 +187,6 @@ Reducing supplier lead time produced substantial improvements in overall invento
 
 ---
 
-# Results
-
-The simulation successfully demonstrates the trade-off between:
-
-* Inventory holding cost
-* Ordering cost
-* Customer service level
-* Lost sales
-* Profitability
-
-The experiments show that selecting appropriate values for **s** and **S** is critical to achieving an optimal balance between inventory investment and customer satisfaction.
-
----
-
 # Repository Structure
 
 ```text
@@ -302,14 +232,3 @@ inventory-control-arena/
 | Parameter Optimization                  | Lead Time Analysis                      |
 | --------------------------------------- | --------------------------------------- |
 | ![](screenshots/process_analyzer_S.jpg) | ![](screenshots/process_analyzer_L.jpg) |
-
----
-
-# Project Highlights
-
-* Developed a complete **Discrete Event Simulation** using Rockwell Arena.
-* Implemented an **(s, S)** inventory control policy.
-* Modeled stochastic customer arrivals and demand.
-* Evaluated financial and operational KPIs.
-* Performed simulation-based optimization using Arena Process Analyzer.
-* Identified near-optimal inventory policy parameters through sensitivity analysis.
