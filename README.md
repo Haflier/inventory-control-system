@@ -43,15 +43,15 @@ The simulation evaluates the operational and financial performance of this inven
 
 | Parameter                 | Value            |
 | ------------------------- | ---------------- |
-| Selling Price (r)         | 5                |
-| Purchase Cost (c)         | 3                |
+| Selling Price (r)         | 5 per unit       |
+| Purchase Cost (c)         | 3 per unit       |
 | Initial Inventory         | 50 units         |
-| Order-up-to Level (S)     | 60               |
-| Reorder Point (s)         | 24               |
+| Order-up-to Level (S)     | 60 units         |
+| Reorder Point (s)         | 24 units         |
 | Lead Time (L)             | 1 day            |
 | Holding Cost              | 0.1 per unit/day |
-| Customer Arrival Rate (λ) | 2                |
-| Simulation Length         | 365 days         |
+| Customer Arrival Rate (λ) | 2 Poisson        |
+| Simulation Length (T)     | 365 days         |
 
 # Stochastic Assumptions
 
@@ -59,17 +59,11 @@ The simulation evaluates the operational and financial performance of this inven
 
 Customer arrivals follow a **Poisson process**
 
-**Arrival Process:** `N(t) ~ Poisson(λ)`
-
-where
-
-**Arrival Rate:** `λ = 2`
+**Arrival Process:** `N(t) ~ Poisson(λ)` where **Arrival Rate:** `λ = 2`
 
 ### Demand Size (tbl(2))
 
-Each customer's demand is randomly generated using
-
-**Demand Distribution:** `[Uniform[8, 23]]`
+Each customer's demand is randomly generated using **Demand Distribution:** `[Uniform[8, 23]]`
 
 note that it's a <<discrete>> uniform distribution on integers from 8 to 23.
 
